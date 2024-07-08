@@ -1,0 +1,42 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    06/07/2024  21:27:28  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Add.obj TO .\Objects\Two8BitNumberAddition PRINT (.\Listings\Two8BitNumberAddition
+>> .m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Add.obj (ADD)
+
+
+LINK MAP OF MODULE:  .\Objects\Two8BitNumberAddition (ADD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0004H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Two8BitNumberAddition (ADD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ADD
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  -------         ENDMOD        ADD
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0004H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=4
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

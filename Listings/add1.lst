@@ -1,0 +1,27 @@
+A51 MACRO ASSEMBLER  ADD1                                                                 06/14/2024 19:44:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\add1.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE add1.a51 SET(SMALL) DEBUG PRINT(.\Listings\add1.lst) OBJECT(.\Objects\a
+                      dd1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7402              1     mov a,#02h
+0002 2402              2     add a,#02h
+                       3     end
+A51 MACRO ASSEMBLER  ADD1                                                                 06/14/2024 19:44:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

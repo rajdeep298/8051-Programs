@@ -1,0 +1,5 @@
+".\Objects\STARTUP.obj",
+".\Objects\HextoBCD.obj",
+".\Objects\add1.obj" 
+TO ".\Objects\HextoBCD" 
+PRINT(".\Listings\HextoBCD.m51")

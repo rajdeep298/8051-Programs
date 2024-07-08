@@ -1,0 +1,3 @@
+".\Objects\Add.obj" 
+TO ".\Objects\Two8BitNumberAddition" 
+PRINT(".\Listings\Two8BitNumberAddition.m51")

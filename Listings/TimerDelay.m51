@@ -1,0 +1,52 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/08/2024  20:56:36  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\TimeDelay.obj TO .\Objects\TimerDelay PRINT (.\Listings\TimerDelay.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\TimeDelay.obj (TIMEDELAY)
+
+
+LINK MAP OF MODULE:  .\Objects\TimerDelay (TIMEDELAY)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0012H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\TimerDelay (TIMEDELAY)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TIMEDELAY
+  C:000BH         SYMBOL        LOOP
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         10
+  C:0003H         LINE#         11
+  C:0006H         LINE#         12
+  C:0009H         LINE#         13
+  C:000BH         LINE#         14
+  C:000EH         LINE#         15
+  C:0010H         LINE#         16
+  -------         ENDMOD        TIMEDELAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0012H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=18
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

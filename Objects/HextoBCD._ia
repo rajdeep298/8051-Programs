@@ -1,0 +1,1 @@
+"HextoBCD.a51" SET (SMALL) DEBUG PRINT(.\Listings\HextoBCD.lst) OBJECT(.\Objects\HextoBCD.obj) EP

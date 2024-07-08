@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     06/14/2024 20:22:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PackedtoUnpacked.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE PackedtoUnpacked.a51 SET(SMALL) DEBUG PRINT(.\Listings\PackedtoUnpacked
+                      .lst) OBJECT(.\Objects\PackedtoUnpacked.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7920              1     mov r1,#20h     ; r<-20h
+0002 E7                2     mov a,@r1       ;a<-M//r1
+0003 F5F0              3     mov b,a         ;b<-a
+0005 54F0              4     anl a,#0f0h     ;a<-a^f0h
+0007 C4                5     swap a          ;swap nibbles of a
+0008 7930              6     mov r1,#30h     ;r1<-30h
+000A F7                7     mov @r1,a       ;M//r1<-a
+000B 09                8     inc r1          ;r1++
+000C E5F0              9     mov a,b         ;a<-b
+000E 540F             10     anl a,#0fh      ;a<-a^0fh
+0010 F7               11     mov @r1,a       ;M//r1<-a
+                      12     end
+A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     06/14/2024 20:22:19 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

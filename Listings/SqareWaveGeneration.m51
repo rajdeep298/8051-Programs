@@ -1,0 +1,58 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/09/2024  01:14:12  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\SquareWaveGeneration.obj TO .\Objects\SqareWaveGeneration PRINT (.\Listings\SqareW
+>> aveGeneration.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\SquareWaveGeneration.obj (SQUAREWAVEGENERATION)
+
+
+LINK MAP OF MODULE:  .\Objects\SqareWaveGeneration (SQUAREWAVEGENERATION)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0018H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\SqareWaveGeneration (SQUAREWAVEGENERATION)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SQUAREWAVEGENERATION
+  C:0005H         SYMBOL        AGAIN
+  C:000DH         SYMBOL        LOOP
+  D:0090H         SYMBOL        P1
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         14
+  C:0002H         LINE#         15
+  C:0005H         LINE#         16
+  C:0008H         LINE#         17
+  C:000BH         LINE#         18
+  C:000DH         LINE#         19
+  C:0010H         LINE#         20
+  C:0012H         LINE#         21
+  C:0014H         LINE#         22
+  C:0016H         LINE#         23
+  -------         ENDMOD        SQUAREWAVEGENERATION
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0018H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=24
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

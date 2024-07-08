@@ -1,0 +1,57 @@
+A51 MACRO ASSEMBLER  SQUAREWAVEGENERATION                                                 07/09/2024 01:05:42 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\SquareWaveGeneration.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE SquareWaveGeneration.a51 SET(SMALL) DEBUG PRINT(.\Listings\SquareWaveGe
+                      neration.lst) OBJECT(.\Objects\SquareWaveGeneration.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;50Hz squarewave generation using timer delay
+                       2     
+                       3     
+                       4     ;Procedure:
+                       5     ;Timeperiod in 8051=1.085 microsec
+                       6     ;Sqaure wave generation means we have to make one port pin high port predefined amount of t
+                             ime and then same amount of time in low state
+                       7     ;T50=1/(50 Hz)= 20ms
+                       8     ;So we have to keep 10ms high and 10ms low
+                       9     ;10ms/1.085 microsec=9216
+                      10     ;65536-9216=56320
+                      11     ;56320d=>dc00h
+                      12     ;TH0=dch,TL0=00h
+                      13     
+0000 C290             14     clr P1.0                        ;set P1.0=0
+0002 758901           15     mov TMOD,#01h           ;set timer-0 mode-1
+0005 758CDC           16     again:mov TH0,#0dch             ;TH0=dch
+0008 758A00           17     mov TL0,#00h            ;TL0=00h
+000B D28C             18     setb TR0                        ;TR1=0 timer starts
+000D 308DFD           19     loop:jnb TF0,loop       ;continue while overflow doesnot happens
+0010 C28C             20     clr TR0                         ;clear TR0
+0012 B290             21     cpl P1.0
+0014 C28D             22     clr TF0                         ;clear TF0
+0016 80ED             23     sjmp again                      ;make this process infinite
+*** WARNING #A41 IN 23 (SquareWaveGeneration.a51, LINE 23): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  SQUAREWAVEGENERATION                                                 07/09/2024 01:05:42 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0005H   A   
+LOOP . . . . . . .  C ADDR   000DH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

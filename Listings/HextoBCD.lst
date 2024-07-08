@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  HEXTOBCD                                                             06/14/2024 19:44:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\HextoBCD.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE HextoBCD.a51 SET(SMALL) DEBUG PRINT(.\Listings\HextoBCD.lst) OBJECT(.\O
+                      bjects\HextoBCD.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7920              1     mov R1,#20h     ;r1<-20h
+0002 E7                2     mov a,@R1       ;a<-M//r1
+0003 75F00A            3     mov b,#0ah      ;b<-oah
+0006 84                4     div ab          ;a<-a/b b<-a%b
+0007 ADF0              5     mov R5,b        ;r5<-b
+0009 75F00A            6     mov b,#0ah  ;b<-oah
+000C 84                7     div ab          ;a<-a/b b<-a%b
+000D 7930              8     mov R1,#30h     ;r1<-30h
+000F F7                9     mov @R1,a       ;M//r1<-a
+0010 E5F0             10     mov a,b         ;a<-b
+0012 C4               11     swap a          ;swap the nibbles of a
+0013 2D               12     add a,R5        ;a<-a+r5
+0014 09               13     inc R1          ;r1++
+0015 F7               14     mov @R1,a
+                      15     end
+A51 MACRO ASSEMBLER  HEXTOBCD                                                             06/14/2024 19:44:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

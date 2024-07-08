@@ -1,0 +1,3 @@
+".\Objects\UnpackedToPackedBCD.obj" 
+TO ".\Objects\UnpackedToPackedBCD" 
+PRINT(".\Listings\UnpackedToPackedBCD.m51")

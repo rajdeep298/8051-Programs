@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  TIMEDELAY                                                            07/08/2024 20:56:36 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\TimeDelay.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE TimeDelay.a51 SET(SMALL) DEBUG PRINT(.\Listings\TimeDelay.lst) OBJECT(.
+                      \Objects\TimeDelay.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Program to create 1ms time delay
+                       2     
+                       3     ;Formula for this is
+                       4     ;NNNN=timeDelay/1.085 microsec  NNNN=1ms/1.085 microsec=922
+                       5     ;MMMM=65536-NNNN                                MMMM=65536-922=64614
+                       6     ;X1X2Y1Y2=MMMMh                                 X1X2Y1Y2=FC66h
+                       7     ;THX=X1X2                                               TH0=fch
+                       8     ;TLX=Y1Y1                                               TL0=66h
+                       9     
+0000 758901           10     mov TMOD,#01h           ;select timer-0 mode-1
+0003 758CFC           11     mov TH0,#0fCh           ;TH0<-fCh
+0006 758A66           12     mov TL0,#66h            ;TL0<-66h
+0009 D28C             13     setb TR0                        ;TR0<-1
+000B 308DFD           14     loop:jnb TF0,loop       ;Jump untill overflow happens
+000E C28C             15     clr TR0
+0010 C28D             16     clr TF0
+                      17     end
+A51 MACRO ASSEMBLER  TIMEDELAY                                                            07/08/2024 20:56:36 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   000BH   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
