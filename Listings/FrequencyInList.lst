@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  FREQUENCYINLIST                                                      07/09/2024 11:23:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\FrequencyInList.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE FrequencyInList.a51 SET(SMALL) DEBUG PRINT(.\Listings\FrequencyInList.l
+                      st) OBJECT(.\Objects\FrequencyInList.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Program to find frequency of a number in a list
+0000 7820              2     mov R0,#20h                             ;memory elements are stored from 20h location
+0002 7900              3     mov R1,#00h                             ;initialize the counter
+0004 7A0A              4     mov R2,#0Ah                             ;R2=0Ah store the number of elements in list
+0006 E6                5     loop:mov a,@R0                  ;a<-((r1))
+0007 B40A04            6     cjne a,#0Ah,next                ;compare a with 0Ah if not equal jump to next
+000A 09                7     inc R1                                  ;if a==0Ah then R1++
+000B 74FF              8     mov A,#0FFh                             ;a<-0ffh
+000D F6                9     mov     @R0,a                           ;M((R1))=#FFh
+000E 08               10     next:inc R0                             ;R1++
+000F DAF5             11     djnz R2,Loop                    ;if R2!=0 loop back
+                      12     end
+                                     
+                             ;Memory Content Before
+                             ;01 oa 05 09 02 04 0a 06 0a 0b
+                             
+A51 MACRO ASSEMBLER  FREQUENCYINLIST                                                      07/09/2024 11:23:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   000EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

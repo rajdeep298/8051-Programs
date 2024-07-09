@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\FrequencyInList.obj" 
+TO ".\Objects\FrequencyInList" 
+PRINT(".\Listings\FrequencyInList.m51")
