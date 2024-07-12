@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  NOOFZEROSINARRAY                                                     07/13/2024 03:39:01 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\NoOfZerosInArray.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE NoOfZerosInArray.a51 SET(SMALL) DEBUG PRINT(.\Listings\NoOfZerosInArray
+                      .lst) OBJECT(.\Objects\NoOfZerosInArray.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;ALP to calculate null/zeros in an array.
+0000 7820              2     mov r0,#20h                             ;r0<-20h
+0002 7940              3     mov r1,#40h                             ;r1<-30h
+0004 7A0A              4     mov r2,#0ah                             ;r2<-0ah
+0006 7D00              5     mov r5,#00h                             ;r5<-00h
+0008 E6                6     loop:mov a,@r0                  ;a<-m((r0))
+0009 B40001            7             cjne a,#00h,next        ;if a!=0 jump to next
+000C 0D                8             inc r5                          ;r5++
+000D 08                9             next:inc r0
+000E DAF8             10                     djnz r2,loop    ;r2-- is not zero then go to loop
+0010 ED               11     mov a,r5                                ;a<-r5
+0011 F7               12     mov @r1,a                               ;m((r1))<-a
+                      13     end
+A51 MACRO ASSEMBLER  NOOFZEROSINARRAY                                                     07/13/2024 03:39:01 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0008H   A   
+NEXT . . . . . . .  C ADDR   000DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

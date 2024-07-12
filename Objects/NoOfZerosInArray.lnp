@@ -1,0 +1,3 @@
+".\Objects\NoOfZerosInArray.obj" 
+TO ".\Objects\NoOfZerosInArray" 
+PRINT(".\Listings\NoOfZerosInArray.m51")
