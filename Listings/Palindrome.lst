@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  PALINDROME                                                           07/13/2024 03:14:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Palindrome.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE Palindrome.a51 SET(SMALL) DEBUG PRINT(.\Listings\Palindrome.lst) OBJECT
+                      (.\Objects\Palindrome.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Program to check if a number is palindrome or not
+0000 7820              2     mov r0,#20h                     ;r<-20h
+0002 E6                3     mov a,@r0                       ;a<-m((r1))
+0003 FD                4     mov     r5,a                    ;r5<-a
+0004 54F0              5     anl a,#0f0h                     ;a<-a&f0
+0006 C4                6     swap a                          ;swap nibbles of a
+0007 F5F0              7     mov b,a                         ;b<-a
+0009 ED                8     mov a,r5                        ;a<-r5
+000A 540F              9     anl a,#0fh                      ;a<-a&0f
+000C B5F005           10     cjne a,b,not_eq         ;compare a and b if they are not equal jump to not_eq
+000F 7401             11     mov a,#01h                      ;if equal store 01
+0011 F6               12     mov @r0,a
+0012 8003             13     jmp exit
+0014 7400             14     not_eq:mov a,#00h       ;if equal store 00
+0016 F6               15                     mov @r0,a
+0017 00               16     exit:nop
+                      17     end
+A51 MACRO ASSEMBLER  PALINDROME                                                           07/13/2024 03:14:32 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+EXIT . . . . . . .  C ADDR   0017H   A   
+NOT_EQ . . . . . .  C ADDR   0014H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

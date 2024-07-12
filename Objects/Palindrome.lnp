@@ -1,0 +1,3 @@
+".\Objects\Palindrome.obj" 
+TO ".\Objects\Palindrome" 
+PRINT(".\Listings\Palindrome.m51")
