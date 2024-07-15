@@ -1,0 +1,3 @@
+".\Objects\Prime.obj" 
+TO ".\Objects\Prime" 
+PRINT(".\Listings\Prime.m51")

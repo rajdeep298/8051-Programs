@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  TWO8BITNUMBERADDITIONSUM16BIT                                        07/16/2024 04:27:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Two8BitNumberAdditionSum16bit.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE Two8BitNumberAdditionSum16bit.a51 SET(SMALL) DEBUG PRINT(.\Listings\Two
+                      8BitNumberAdditionSum16bit.lst) OBJECT(.\Objects\Two8BitNumberAdditionSum16bit.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Add of two 8 bit numbers sum is 16 bit.
+0000 7820              2     mov r0,#20h
+0002 7930              3     mov r1,#30h
+0004 E6                4     mov a,@r0
+0005 08                5     inc r0
+0006 26                6     add a,@r0
+0007 F7                7     mov @r1,a
+0008 09                8     inc r1
+0009 7400              9     mov a,#00h
+000B 3400             10     addc a,#00h
+000D F7               11     mov @r1,a
+                      12     end
+A51 MACRO ASSEMBLER  TWO8BITNUMBERADDITIONSUM16BIT                                        07/16/2024 04:27:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

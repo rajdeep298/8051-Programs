@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  ARRAYSUMRESULT8BIT                                                   07/16/2024 04:48:17 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ArraySumResult8bit.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE ArraySumResult8bit.a51 SET(SMALL) DEBUG PRINT(.\Listings\ArraySumResult
+                      8bit.lst) OBJECT(.\Objects\ArraySumResult8bit.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Add of ten 8 bit numbers sum is 8 bit.
+0000 7820              2     mov r0,#20h
+0002 7D0A              3     mov r5,#0ah
+0004 26                4     loop:add a,@r0
+0005 08                5             inc r0
+0006 DDFC              6             djnz r5,loop
+                       7     end
+A51 MACRO ASSEMBLER  ARRAYSUMRESULT8BIT                                                   07/16/2024 04:48:17 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0004H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

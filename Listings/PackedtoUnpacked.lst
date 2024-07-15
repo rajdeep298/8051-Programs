@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     06/14/2024 20:22:19 PAGE     1
+A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     07/16/2024 00:47:09 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -13,14 +13,12 @@ LOC  OBJ            LINE     SOURCE
 0003 F5F0              3     mov b,a         ;b<-a
 0005 54F0              4     anl a,#0f0h     ;a<-a^f0h
 0007 C4                5     swap a          ;swap nibbles of a
-0008 7930              6     mov r1,#30h     ;r1<-30h
-000A F7                7     mov @r1,a       ;M//r1<-a
-000B 09                8     inc r1          ;r1++
-000C E5F0              9     mov a,b         ;a<-b
-000E 540F             10     anl a,#0fh      ;a<-a^0fh
-0010 F7               11     mov @r1,a       ;M//r1<-a
-                      12     end
-A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     06/14/2024 20:22:19 PAGE     2
+0008 FA                6     mov r2,a        ;M//r1<-a
+0009 E5F0              7     mov a,b         ;a<-b
+000B 540F              8     anl a,#0fh      ;a<-a^0fh
+000D FB                9     mov r3,a        ;M//r1<-a
+                      10     end
+A51 MACRO ASSEMBLER  PACKEDTOUNPACKED                                                     07/16/2024 00:47:09 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

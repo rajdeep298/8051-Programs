@@ -1,0 +1,3 @@
+".\Objects\16bitNoAddResult16bit.obj" 
+TO ".\Objects\16bitNoAddResult16bit" 
+PRINT(".\Listings\16bitNoAddResult16bit.m51")

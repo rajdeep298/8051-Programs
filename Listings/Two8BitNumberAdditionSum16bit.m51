@@ -1,0 +1,50 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  04:27:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Two8BitNumberAdditionSum16bit.obj TO .\Objects\Two8BitNumberAdditionSum16bit PRINT
+>>  (.\Listings\Two8BitNumberAdditionSum16bit.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Two8BitNumberAdditionSum16bit.obj (TWO8BITNUMBERADDITIONSUM16BIT)
+
+
+LINK MAP OF MODULE:  .\Objects\Two8BitNumberAdditionSum16bit (TWO8BITNUMBERADDITIONSUM16BIT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000EH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Two8BitNumberAdditionSum16bit (TWO8BITNUMBERADDITIONSUM16BIT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TWO8BITNUMBERADDITIONSUM16BIT
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  C:0007H         LINE#         7
+  C:0008H         LINE#         8
+  C:0009H         LINE#         9
+  C:000BH         LINE#         10
+  C:000DH         LINE#         11
+  -------         ENDMOD        TWO8BITNUMBERADDITIONSUM16BIT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000EH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=14
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

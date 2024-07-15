@@ -1,0 +1,60 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  04:14:37  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Prime.obj TO .\Objects\Prime PRINT (.\Listings\Prime.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Prime.obj (PRIME)
+
+
+LINK MAP OF MODULE:  .\Objects\Prime (PRIME)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     001AH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Prime (PRIME)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PRIME
+  D:00F0H         SYMBOL        B
+  C:0012H         SYMBOL        DIVISABLE
+  C:0006H         SYMBOL        LOOP
+  C:0015H         SYMBOL        THEN
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0006H         LINE#         5
+  C:0009H         LINE#         6
+  C:000AH         LINE#         7
+  C:000BH         LINE#         8
+  C:000CH         LINE#         9
+  C:000EH         LINE#         10
+  C:0010H         LINE#         11
+  C:0012H         LINE#         12
+  C:0013H         LINE#         13
+  C:0014H         LINE#         14
+  C:0015H         LINE#         15
+  C:0016H         LINE#         16
+  C:0017H         LINE#         17
+  C:0018H         LINE#         18
+  -------         ENDMOD        PRIME
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001AH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=26
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

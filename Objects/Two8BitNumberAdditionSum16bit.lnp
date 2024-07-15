@@ -1,0 +1,3 @@
+".\Objects\Two8BitNumberAdditionSum16bit.obj" 
+TO ".\Objects\Two8BitNumberAdditionSum16bit" 
+PRINT(".\Listings\Two8BitNumberAdditionSum16bit.m51")

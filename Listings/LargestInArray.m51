@@ -1,0 +1,57 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  03:38:31  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\LargestInArray.obj TO .\Objects\LargestInArray PRINT (.\Listings\LargestInArray.m5
+>> 1)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\LargestInArray.obj (LARGESTINARRAY)
+
+
+LINK MAP OF MODULE:  .\Objects\LargestInArray (LARGESTINARRAY)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0014H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\LargestInArray (LARGESTINARRAY)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LARGESTINARRAY
+  D:00F0H         SYMBOL        B
+  C:0006H         SYMBOL        LOOP
+  C:000FH         SYMBOL        NEXT
+  C:0011H         SYMBOL        THEN
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  C:0008H         LINE#         7
+  C:0009H         LINE#         8
+  C:000BH         LINE#         9
+  C:000DH         LINE#         10
+  C:000FH         LINE#         11
+  C:0010H         LINE#         12
+  C:0011H         LINE#         13
+  C:0012H         LINE#         14
+  -------         ENDMOD        LARGESTINARRAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0014H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=20
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

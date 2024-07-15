@@ -1,0 +1,3 @@
+".\Objects\ArrayNibbleTransfer.obj" 
+TO ".\Objects\ArrayNibbleTransfer" 
+PRINT(".\Listings\ArrayNibbleTransfer.m51")

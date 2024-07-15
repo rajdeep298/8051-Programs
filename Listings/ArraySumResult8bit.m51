@@ -1,0 +1,46 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  04:48:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ArraySumResult8bit.obj TO .\Objects\ArraySumResult8bit PRINT (.\Listings\ArraySumR
+>> esult8bit.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\ArraySumResult8bit.obj (ARRAYSUMRESULT8BIT)
+
+
+LINK MAP OF MODULE:  .\Objects\ArraySumResult8bit (ARRAYSUMRESULT8BIT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0008H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\ArraySumResult8bit (ARRAYSUMRESULT8BIT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ARRAYSUMRESULT8BIT
+  C:0004H         SYMBOL        LOOP
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  -------         ENDMOD        ARRAYSUMRESULT8BIT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0008H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=8
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  SORTINASCENDINGORDER                                                 07/16/2024 05:22:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\SortInAscendingOrder.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE SortInAscendingOrder.a51 SET(SMALL) DEBUG PRINT(.\Listings\SortInAscend
+                      ingOrder.lst) OBJECT(.\Objects\SortInAscendingOrder.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Arranging a series of Numbers in Asccending order
+0000 7E0A              2     mov r6,#0ah
+0002 7820              3     oLoop:mov r0,#20h
+0004 7921              4     mov r1,#21h
+0006 7F09              5     mov r7,#09h
+0008 E6                6     loop:mov a,@r0
+0009 F5F0              7             mov b,a
+000B 97                8             subb a,@r1
+000C 5002              9             jnc exchange
+000E 800B             10             jmp then
+0010 E5F0             11             exchange:mov a,b
+0012 FA               12                             mov r2,a
+0013 E7               13                             mov a,@r1
+0014 FB               14                             mov r3,a
+0015 EA               15                             mov a,r2
+0016 F7               16                             mov @r1,a
+0017 EB               17                             mov a,r3
+0018 F6               18                             mov @r0,a
+0019 08               19                             inc r0
+001A 09               20                             inc r1
+001B DFEB             21             then:djnz r7,loop
+001D DEE3             22     djnz r6,oLoop
+                      23     end
+A51 MACRO ASSEMBLER  SORTINASCENDINGORDER                                                 07/16/2024 05:22:45 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+EXCHANGE . . . . .  C ADDR   0010H   A   
+LOOP . . . . . . .  C ADDR   0008H   A   
+OLOOP. . . . . . .  C ADDR   0002H   A   
+THEN . . . . . . .  C ADDR   001BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,3 @@
+".\Objects\ArraySumResult8bit.obj" 
+TO ".\Objects\ArraySumResult8bit" 
+PRINT(".\Listings\ArraySumResult8bit.m51")
