@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  ADD                                                                  06/07/2024 21:27:28 PAGE     1
+A51 MACRO ASSEMBLER  ADD                                                                  07/16/2024 12:53:49 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -10,9 +10,9 @@ LOC  OBJ            LINE     SOURCE
 
                        1     ;Addition of two numbers 
 0000 7402              2     mov a,#02h
-0002 2402              3     add a,#02h
+0002 2403              3     add a,#03h
                        4     end
-A51 MACRO ASSEMBLER  ADD                                                                  06/07/2024 21:27:28 PAGE     2
+A51 MACRO ASSEMBLER  ADD                                                                  07/16/2024 12:53:49 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

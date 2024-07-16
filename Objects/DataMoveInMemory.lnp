@@ -1,0 +1,3 @@
+".\Objects\DataMoveInMemory.obj" 
+TO ".\Objects\DataMoveInMemory" 
+PRINT(".\Listings\DataMoveInMemory.m51")
