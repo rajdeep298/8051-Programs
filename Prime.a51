@@ -1,4 +1,4 @@
-;Find prime numbers from a list that are divisable by 5
+;Find numbers from a list that are divisable by 5
 mov r0,#20h
 mov r1,#30h
 mov r7,#0ah

@@ -1,0 +1,44 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  05:32:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\SubstractionDataAndRegister.obj TO .\Objects\SubstractionDataAndRegister PRINT (.\
+>> Listings\SubstractionDataAndRegister.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\SubstractionDataAndRegister.obj (SUBSTRACTIONDATAANDREGISTER)
+
+
+LINK MAP OF MODULE:  .\Objects\SubstractionDataAndRegister (SUBSTRACTIONDATAANDREGISTER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0006H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\SubstractionDataAndRegister (SUBSTRACTIONDATAANDREGISTER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SUBSTRACTIONDATAANDREGISTER
+  C:0000H         LINE#         4
+  C:0002H         LINE#         5
+  C:0004H         LINE#         6
+  C:0005H         LINE#         7
+  -------         ENDMOD        SUBSTRACTIONDATAANDREGISTER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0006H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=6
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

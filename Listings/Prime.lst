@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  PRIME                                                                07/16/2024 04:14:37 PAGE     1
+A51 MACRO ASSEMBLER  PRIME                                                                07/16/2024 11:02:38 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -8,7 +8,7 @@ ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE Prime.a51 SET(SMALL) DEBUG PRIN
 
 LOC  OBJ            LINE     SOURCE
 
-                       1     ;Find prime numbers from a list that are divisable by 5
+                       1     ;Find numbers from a list that are divisable by 5
 0000 7820              2     mov r0,#20h
 0002 7930              3     mov r1,#30h
 0004 7F0A              4     mov r7,#0ah
@@ -22,12 +22,10 @@ LOC  OBJ            LINE     SOURCE
 0012 EB               12             divisable:mov a,r3
 0013 F7               13                     mov @r1,a
 0014 09               14                     inc r1
-0015 EB               15             then:mov a,r3
-0016 F6               16                     mov @r0,a
-0017 08               17                     inc r0
-0018 DFEC             18             djnz r7,loop
-                      19     end
-A51 MACRO ASSEMBLER  PRIME                                                                07/16/2024 04:14:37 PAGE     2
+0015 08               15             then:inc r0
+0016 DFEE             16             djnz r7,loop
+                      17     end
+A51 MACRO ASSEMBLER  PRIME                                                                07/16/2024 11:02:38 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

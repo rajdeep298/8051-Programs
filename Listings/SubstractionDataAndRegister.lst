@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  SUBSTRACTIONDATAANDREGISTER                                          07/16/2024 05:32:30 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\SubstractionDataAndRegister.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE SubstractionDataAndRegister.a51 SET(SMALL) DEBUG PRINT(.\Listings\Subst
+                      ractionDataAndRegister.lst) OBJECT(.\Objects\SubstractionDataAndRegister.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Substraction of two 8 bit numbers-one number EFH is in the accumulator and other number 45
+                             H in R0 register. 
+                       2     ;After substraction, result to be stored in R1 register
+                       3     
+0000 74EF              4     mov a,#0efh
+0002 7845              5     mov r0,#45h
+0004 98                6     subb a,r0
+0005 F9                7     mov r1,a
+                       8     end
+A51 MACRO ASSEMBLER  SUBSTRACTIONDATAANDREGISTER                                          07/16/2024 05:32:30 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

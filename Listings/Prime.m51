@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  04:14:37  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/16/2024  11:02:39  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
@@ -19,7 +19,7 @@ LINK MAP OF MODULE:  .\Objects\Prime (PRIME)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     001AH     ABSOLUTE     
+            CODE    0000H     0018H     ABSOLUTE     
 
 
 
@@ -48,13 +48,11 @@ SYMBOL TABLE OF MODULE:  .\Objects\Prime (PRIME)
   C:0014H         LINE#         14
   C:0015H         LINE#         15
   C:0016H         LINE#         16
-  C:0017H         LINE#         17
-  C:0018H         LINE#         18
   -------         ENDMOD        PRIME
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001AH BYTE ( 1%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0018H BYTE ( 1%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=26
+Program Size: data=8.0 xdata=0 code=24
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
