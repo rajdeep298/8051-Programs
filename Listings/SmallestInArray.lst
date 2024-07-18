@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  SMALLESTINARRAY                                                      07/18/2024 22:24:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\SmallestInArray.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE SmallestInArray.a51 SET(SMALL) DEBUG PRINT(.\Listings\SmallestInArray.l
+                      st) OBJECT(.\Objects\SmallestInArray.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Find the smallest among 
+0000 7820              2     mov r0,#20h
+0002 7D09              3     mov r5,#09h
+0004 E6                4     mov a,@r0
+0005 08                5     inc r0
+0006 F5F0              6     loop:mov b,a
+0008 96                7             subb a,@r0
+0009 5004              8             jnc next
+000B E5F0              9             mov a,b
+000D 8002             10             jmp then
+000F C3               11             next:clr c
+0010 E6               12                     mov a,@r0
+0011 08               13                     then:inc r0
+0012 DDF2             14             djnz r5,loop
+*** WARNING #A41 IN 14 (SmallestInArray.a51, LINE 14): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  SMALLESTINARRAY                                                      07/18/2024 22:24:19 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   000FH   A   
+THEN . . . . . . .  C ADDR   0011H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

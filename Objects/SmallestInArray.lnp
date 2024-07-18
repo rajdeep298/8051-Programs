@@ -1,0 +1,3 @@
+".\Objects\SmallestInArray.obj" 
+TO ".\Objects\SmallestInArray" 
+PRINT(".\Listings\SmallestInArray.m51")
