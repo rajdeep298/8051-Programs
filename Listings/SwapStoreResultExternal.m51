@@ -1,0 +1,44 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/18/2024  22:18:34  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\SwapStoreResultExternal.obj TO .\Objects\SwapStoreResultExternal PRINT (.\Listings
+>> \SwapStoreResultExternal.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\SwapStoreResultExternal.obj (SWAPSTORERESULTEXTERNAL)
+
+
+LINK MAP OF MODULE:  .\Objects\SwapStoreResultExternal (SWAPSTORERESULTEXTERNAL)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0007H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\SwapStoreResultExternal (SWAPSTORERESULTEXTERNAL)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SWAPSTORERESULTEXTERNAL
+  C:0000H         LINE#         3
+  C:0002H         LINE#         4
+  C:0003H         LINE#         5
+  C:0006H         LINE#         6
+  -------         ENDMOD        SWAPSTORERESULTEXTERNAL
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0007H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=7
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

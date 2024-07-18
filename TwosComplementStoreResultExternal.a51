@@ -3,5 +3,5 @@ mov a,#0f0h
 cpl a
 inc a
 mov dptr,#9000h
-movx @dptr,a
+movx 9000h,a
 end

@@ -1,0 +1,3 @@
+".\Objects\SwapStoreResultExternal.obj" 
+TO ".\Objects\SwapStoreResultExternal" 
+PRINT(".\Listings\SwapStoreResultExternal.m51")
