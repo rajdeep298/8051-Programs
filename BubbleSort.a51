@@ -5,6 +5,7 @@ mov r7,#09h
 mov a,r7
 clr c
 subb a,r6
+inc a
 mov r7,a
 loop:mov a,@r0
 	mov b,a

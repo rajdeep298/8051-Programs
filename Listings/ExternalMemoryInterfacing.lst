@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  EXTERNALMEMORYINTERFACING                                            07/18/2024 22:02:33 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ExternalMemoryInterfacing.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE ExternalMemoryInterfacing.a51 SET(SMALL) DEBUG PRINT(.\Listings\Externa
+                      lMemoryInterfacing.lst) OBJECT(.\Objects\ExternalMemoryInterfacing.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Addition of ten 8 bit Nos. in the External RAM location starting from 8000H.
+                       2     ;Sum is sixteen bit result is stored in memory locations 8100H and 8101H.
+                       3     
+0000 908000            4     mov dptr,#8000h
+0003 7809              5     mov r0,#09h
+0005 7F00              6     mov r7,#00h
+0007 E0                7     movx a,@dptr
+0008 C3                8     clr c
+0009 A3                9     inc dptr
+                      10     
+000A F5F0             11     loop:mov b,a
+000C E0               12             movx a,@dptr
+000D 35F0             13             addc a,b
+000F 5003             14             jnc next
+0011 C3               15             clr c
+0012 0F               16             inc r7
+0013 A3               17             inc dptr
+0014 D8F4             18     next:djnz r0,loop
+                      19     
+0016 908100           20     mov dptr,#8100h
+0019 F0               21     movx @dptr,a
+001A A3               22     inc dptr
+001B EF               23     mov a,r7
+001C F0               24     movx @dptr,a
+                      25     end
+A51 MACRO ASSEMBLER  EXTERNALMEMORYINTERFACING                                            07/18/2024 22:02:33 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   000AH   A   
+NEXT . . . . . . .  C ADDR   0014H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

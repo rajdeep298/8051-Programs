@@ -1,0 +1,3 @@
+".\Objects\ExternalMemoryInterfacing.obj" 
+TO ".\Objects\ExternalMemoryInterfacing" 
+PRINT(".\Listings\ExternalMemoryInterfacing.m51")
