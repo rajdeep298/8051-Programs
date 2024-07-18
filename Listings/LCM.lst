@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  LCM                                                                  07/19/2024 00:54:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\LCM.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE LCM.a51 SET(SMALL) DEBUG PRINT(.\Listings\LCM.lst) OBJECT(.\Objects\LCM
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;LCM of two numbers 12 and 30
+0000 780C              2     mov r0,#12d
+0002 791E              3     mov r1,#30d
+0004 E9                4     mov a,r1
+0005 FF                5     mov r7,a
+0006 0F                6     loop:inc r7
+0007 E8                7             mov a,r0
+0008 F5F0              8             mov b,a
+000A EF                9             mov a,r7
+000B 84               10             div ab
+000C E5F0             11             mov a,b
+000E B4000C           12             cjne a,#00h,next
+0011 E9               13             mov a,r1
+0012 F5F0             14             mov b,a
+0014 EF               15             mov a,r7
+0015 84               16             div ab
+0016 E5F0             17             mov a,b
+0018 B40002           18             cjne a,#00h,next
+001B 8002             19             jmp result
+001D 80E7             20             next:jmp loop
+001F 00               21     result:NOP
+                      22     end
+A51 MACRO ASSEMBLER  LCM                                                                  07/19/2024 00:54:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   001DH   A   
+RESULT . . . . . .  C ADDR   001FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
