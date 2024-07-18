@@ -1,0 +1,69 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/18/2024  22:33:36  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\SortInDescendingOrder.obj TO .\Objects\SortInDescendingOrder PRINT (.\Listings\Sor
+>> tInDescendingOrder.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\SortInDescendingOrder.obj (SORTINDESCENDINGORDER)
+
+
+LINK MAP OF MODULE:  .\Objects\SortInDescendingOrder (SORTINDESCENDINGORDER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     001FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\SortInDescendingOrder (SORTINDESCENDINGORDER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SORTINDESCENDINGORDER
+  D:00F0H         SYMBOL        B
+  C:0010H         SYMBOL        EXCHANGE
+  C:0008H         SYMBOL        LOOP
+  C:0002H         SYMBOL        OLOOP
+  C:001BH         SYMBOL        THEN
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  C:000BH         LINE#         8
+  C:000CH         LINE#         9
+  C:000EH         LINE#         10
+  C:0010H         LINE#         11
+  C:0012H         LINE#         12
+  C:0013H         LINE#         13
+  C:0014H         LINE#         14
+  C:0015H         LINE#         15
+  C:0016H         LINE#         16
+  C:0017H         LINE#         17
+  C:0018H         LINE#         18
+  C:0019H         LINE#         19
+  C:001AH         LINE#         20
+  C:001BH         LINE#         21
+  C:001DH         LINE#         22
+  -------         ENDMOD        SORTINDESCENDINGORDER
+
+******************************************************************************
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/18/2024  22:33:36  PAGE 2
+
+
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001FH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=31
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
