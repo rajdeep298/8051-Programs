@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  APSERIES                                                             07/18/2024 23:01:17 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\APSeries.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE APSeries.a51 SET(SMALL) DEBUG PRINT(.\Listings\APSeries.lst) OBJECT(.\O
+                      bjects\APSeries.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Design such ap series :10 15 20 25 30 35 40 45 50 55.
+0000 7820              2     Series:mov r0,#20h
+0002 740A              3             mov a,#0ah
+0004 F6                4             mov @r0,a
+0005 09                5             inc r1
+0006 7F09              6             mov r7,#09h
+0008 2405              7             loop:add a,#05h
+000A 08                8                     inc r0
+000B F6                9                     mov @r0,a
+000C DFFA             10                     djnz r7,loop
+                      11     end
+A51 MACRO ASSEMBLER  APSERIES                                                             07/18/2024 23:01:17 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0008H   A   
+SERIES . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,50 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/18/2024  23:01:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\APSeries.obj TO .\Objects\APSeries PRINT (.\Listings\APSeries.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\APSeries.obj (APSERIES)
+
+
+LINK MAP OF MODULE:  .\Objects\APSeries (APSERIES)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000EH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\APSeries (APSERIES)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        APSERIES
+  C:0008H         SYMBOL        LOOP
+  C:0000H         SYMBOL        SERIES
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0006H         LINE#         6
+  C:0008H         LINE#         7
+  C:000AH         LINE#         8
+  C:000BH         LINE#         9
+  C:000CH         LINE#         10
+  -------         ENDMOD        APSERIES
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000EH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=14
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

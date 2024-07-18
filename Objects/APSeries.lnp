@@ -1,0 +1,3 @@
+".\Objects\APSeries.obj" 
+TO ".\Objects\APSeries" 
+PRINT(".\Listings\APSeries.m51")
