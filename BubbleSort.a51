@@ -1,0 +1,27 @@
+mov r6,#00h
+oLoop:mov r0,#20h
+mov r1,#21h
+mov r7,#09h
+mov a,r7
+clr c
+subb a,r6
+mov r7,a
+loop:mov a,@r0
+	mov b,a
+	subb a,@r1
+	jnc exchange
+	jmp then
+	exchange:mov a,b
+			mov r2,a
+			mov a,@r1
+			mov r3,a
+			mov a,r2
+			mov @r1,a
+			mov a,r3
+			mov @r0,a
+			inc r0
+			inc r1
+	then:djnz r7,loop
+inc r6
+cjne r6,#09h,oLoop
+end

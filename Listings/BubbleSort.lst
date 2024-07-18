@@ -1,0 +1,56 @@
+A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/18/2024 03:40:36 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\BubbleSort.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE BubbleSort.a51 SET(SMALL) DEBUG PRINT(.\Listings\BubbleSort.lst) OBJECT
+                      (.\Objects\BubbleSort.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7E00              1     mov r6,#00h
+0002 7820              2     oLoop:mov r0,#20h
+0004 7921              3     mov r1,#21h
+0006 7F09              4     mov r7,#09h
+0008 EF                5     mov a,r7
+0009 9E                6     subb a,r6
+000A FF                7     mov r7,a
+000B E6                8     loop:mov a,@r0
+000C F5F0              9             mov b,a
+000E 97               10             subb a,@r1
+000F 5002             11             jnc exchange
+0011 800B             12             jmp then
+0013 E5F0             13             exchange:mov a,b
+0015 FA               14                             mov r2,a
+0016 E7               15                             mov a,@r1
+0017 FB               16                             mov r3,a
+0018 EA               17                             mov a,r2
+0019 F7               18                             mov @r1,a
+001A EB               19                             mov a,r3
+001B F6               20                             mov @r0,a
+001C 08               21                             inc r0
+001D 09               22                             inc r1
+001E DFEB             23             then:djnz r7,loop
+0020 C3               24                     clr c
+0021 0E               25     inc r6
+0022 BE09DD           26     cjne r6,#09h,oLoop
+                      27     end
+A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/18/2024 03:40:36 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+EXCHANGE . . . . .  C ADDR   0013H   A   
+LOOP . . . . . . .  C ADDR   000BH   A   
+OLOOP. . . . . . .  C ADDR   0002H   A   
+THEN . . . . . . .  C ADDR   001EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
