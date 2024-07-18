@@ -1,0 +1,3 @@
+".\Objects\TwosComplementStoreResultExternal.obj" 
+TO ".\Objects\TwosComplementStoreResultExternal" 
+PRINT(".\Listings\TwosComplementStoreResultExternal.m51")

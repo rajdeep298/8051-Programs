@@ -1,0 +1,31 @@
+A51 MACRO ASSEMBLER  TWOSCOMPLEMENTSTORERESULTEXTERNAL                                    07/18/2024 22:12:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\TwosComplementStoreResultExternal.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE TwosComplementStoreResultExternal.a51 SET(SMALL) DEBUG PRINT(.\Listings
+                      \TwosComplementStoreResultExternal.lst) OBJECT(.\Objects\TwosComplementStoreResultExternal.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Two’s complement of an 8 bit Number and store result in 9000H memory location.
+0000 74F0              2     mov a,#0f0h
+0002 F4                3     cpl a
+0003 04                4     inc a
+0004 909000            5     mov dptr,#9000h
+0007 F0                6     movx @dptr,a
+                       7     end
+A51 MACRO ASSEMBLER  TWOSCOMPLEMENTSTORERESULTEXTERNAL                                    07/18/2024 22:12:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
