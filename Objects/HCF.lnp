@@ -1,0 +1,3 @@
+".\Objects\HCF.obj" 
+TO ".\Objects\HCF" 
+PRINT(".\Listings\HCF.m51")

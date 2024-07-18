@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  TIMEDELAYUSINGLOOPS                                                  07/19/2024 00:10:51 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\TimeDelayUsingLoops.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE TimeDelayUsingLoops.a51 SET(SMALL) DEBUG PRINT(.\Listings\TimeDelayUsin
+                      gLoops.lst) OBJECT(.\Objects\TimeDelayUsingLoops.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;1 sec time delay using loops
+                       2     
+                       3     
+0000 C290              4     loop: clr p1.0
+0002 780F              5                     loop_out:mov r0,#0fh ;Approximately 1 sec time delay
+0004 79FF              6                     loop_mid:mov r1,#0ffh
+0006 7AFF              7                             loop_in:mov r2,#0ffh
+0008 DAFC              8                                     djnz r2,loop_in
+000A D9F8              9                             djnz r1,loop_mid
+000C D8F4             10             djnz r0,loop_out
+000E B290             11             cpl P1.0
+0010 780F             12                     loop_out2:mov r0,#0fh ;Approximately 1 sec time delay
+0012 79FF             13                     loop_mid2:mov r1,#0ffh
+0014 7AFF             14                             loop_in2:mov r2,#0ffh
+0016 DAFC             15                                     djnz r2,loop_in2
+0018 D9F8             16                             djnz r1,loop_mid2
+001A D8F4             17             djnz r0,loop_out2
+001C 80E2             18             jmp loop
+                      19     end
+                             
+A51 MACRO ASSEMBLER  TIMEDELAYUSINGLOOPS                                                  07/19/2024 00:10:51 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0000H   A   
+LOOP_IN. . . . . .  C ADDR   0006H   A   
+LOOP_IN2 . . . . .  C ADDR   0014H   A   
+LOOP_MID . . . . .  C ADDR   0004H   A   
+LOOP_MID2. . . . .  C ADDR   0012H   A   
+LOOP_OUT . . . . .  C ADDR   0002H   A   
+LOOP_OUT2. . . . .  C ADDR   0010H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

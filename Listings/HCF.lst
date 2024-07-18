@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  HCF                                                                  07/19/2024 00:37:38 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\HCF.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE HCF.a51 SET(SMALL) DEBUG PRINT(.\Listings\HCF.lst) OBJECT(.\Objects\HCF
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;HCF of two numbers 12 and 30
+0000 780C              2     mov r0,#12d
+0002 791E              3     mov r1,#30d
+0004 E8                4     mov a,r0
+0005 FF                5     mov r7,a
+0006 7D00              6     mov r5,#00h
+0008 E8                7     loop:mov a,r0
+0009 8DF0              8             mov b,r5
+000B 84                9             div ab
+000C E5F0             10             mov a,b
+000E B4000B           11             cjne a,#00h,next
+0011 E9               12             mov a,r1
+0012 8DF0             13             mov b,r5
+0014 84               14             div ab
+0015 E5F0             15             mov a,b
+0017 B40002           16             cjne a,#00h,next
+001A ED               17             mov a,r5
+001B FC               18             mov     r4,a
+001C 0D               19             next:inc r5
+001D DFE9             20             djnz r7,loop
+                      21     end
+A51 MACRO ASSEMBLER  HCF                                                                  07/19/2024 00:37:38 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0008H   A   
+NEXT . . . . . . .  C ADDR   001CH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
