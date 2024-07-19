@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  P0_1LEDBLINKING                                                      07/19/2024 11:31:17 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\P0_1LEDBlinking.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE P0_1LEDBlinking.a51 SET(SMALL) DEBUG PRINT(.\Listings\P0_1LEDBlinking.l
+                      st) OBJECT(.\Objects\P0_1LEDBlinking.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Program to read Port 0 and turn on the LEDs for one second and off for one second if PORT 
+                             0 is not zero.
+                       2     ;/Or blink of a led with 1ms delay.
+                       3     
+0000 C290              4     clr P1.0
+0002 1108              5     loop:call Delay
+0004 B290              6             cpl P1.0
+0006 80FA              7             jmp loop
+                       8             
+0008 00                9             Delay:nop
+0009 7C0F             10                     wait1:mov r4,#0fh
+000B 7B00             11                             wait2:mov r3,#00h
+000D 7A00             12                                     mov r2,#00h
+000F DAFE             13                                             wait3:djnz r2,wait3
+0011 DBF8             14                                     djnz r3,wait2
+0013 DCF4             15                             djnz r4,wait1
+0015 22               16                     ret
+                      17     end
+A51 MACRO ASSEMBLER  P0_1LEDBLINKING                                                      07/19/2024 11:31:17 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   0008H   A   
+LOOP . . . . . . .  C ADDR   0002H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+WAIT1. . . . . . .  C ADDR   0009H   A   
+WAIT2. . . . . . .  C ADDR   000BH   A   
+WAIT3. . . . . . .  C ADDR   000FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

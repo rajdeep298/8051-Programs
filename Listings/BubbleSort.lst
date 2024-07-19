@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/18/2024 03:40:36 PAGE     1
+A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/19/2024 11:56:42 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -13,29 +13,28 @@ LOC  OBJ            LINE     SOURCE
 0004 7921              3     mov r1,#21h
 0006 7F09              4     mov r7,#09h
 0008 EF                5     mov a,r7
-0009 9E                6     subb a,r6
-000A FF                7     mov r7,a
-000B E6                8     loop:mov a,@r0
-000C F5F0              9             mov b,a
-000E 97               10             subb a,@r1
-000F 5002             11             jnc exchange
-0011 800B             12             jmp then
-0013 E5F0             13             exchange:mov a,b
-0015 FA               14                             mov r2,a
-0016 E7               15                             mov a,@r1
-0017 FB               16                             mov r3,a
-0018 EA               17                             mov a,r2
-0019 F7               18                             mov @r1,a
-001A EB               19                             mov a,r3
-001B F6               20                             mov @r0,a
-001C 08               21                             inc r0
-001D 09               22                             inc r1
-001E DFEB             23             then:djnz r7,loop
-0020 C3               24                     clr c
-0021 0E               25     inc r6
-0022 BE09DD           26     cjne r6,#09h,oLoop
-                      27     end
-A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/18/2024 03:40:36 PAGE     2
+0009 C3                6     clr c
+000A 9E                7     subb a,r6
+000B 04                8     inc a
+000C FF                9     mov r7,a
+000D E6               10     loop:mov a,@r0
+000E 97               11             subb a,@r1
+000F 5002             12             jnc exchange
+0011 8009             13             jmp then
+0013 E6               14             exchange:mov a,@r0
+0014 FA               15                             mov r2,a
+0015 E7               16                             mov a,@r1
+0016 CA               17                             xch a,r2
+0017 F7               18                             mov @r1,a
+0018 EA               19                             mov a,r2
+0019 F6               20                             mov @r0,a
+001A 08               21                             inc r0
+001B 09               22                             inc r1
+001C DFEF             23             then:djnz r7,loop
+001E 0E               24     inc r6
+001F BE09E0           25     cjne r6,#09h,oLoop
+                      26     end
+A51 MACRO ASSEMBLER  BUBBLESORT                                                           07/19/2024 11:56:42 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -43,11 +42,10 @@ SYMBOL TABLE LISTING
 
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
-B. . . . . . . . .  D ADDR   00F0H   A   
 EXCHANGE . . . . .  C ADDR   0013H   A   
-LOOP . . . . . . .  C ADDR   000BH   A   
+LOOP . . . . . . .  C ADDR   000DH   A   
 OLOOP. . . . . . .  C ADDR   0002H   A   
-THEN . . . . . . .  C ADDR   001EH   A   
+THEN . . . . . . .  C ADDR   001CH   A   
 
 
 REGISTER BANK(S) USED: 0 

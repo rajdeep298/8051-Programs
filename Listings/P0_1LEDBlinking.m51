@@ -1,0 +1,58 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/19/2024  11:31:18  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\P0_1LEDBlinking.obj TO .\Objects\P0_1LEDBlinking PRINT (.\Listings\P0_1LEDBlinking
+>> .m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\P0_1LEDBlinking.obj (P0_1LEDBLINKING)
+
+
+LINK MAP OF MODULE:  .\Objects\P0_1LEDBlinking (P0_1LEDBLINKING)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0016H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\P0_1LEDBlinking (P0_1LEDBLINKING)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        P0_1LEDBLINKING
+  C:0008H         SYMBOL        DELAY
+  C:0002H         SYMBOL        LOOP
+  D:0090H         SYMBOL        P1
+  C:0009H         SYMBOL        WAIT1
+  C:000BH         SYMBOL        WAIT2
+  C:000FH         SYMBOL        WAIT3
+  C:0000H         LINE#         4
+  C:0002H         LINE#         5
+  C:0004H         LINE#         6
+  C:0006H         LINE#         7
+  C:0008H         LINE#         9
+  C:0009H         LINE#         10
+  C:000BH         LINE#         11
+  C:000DH         LINE#         12
+  C:000FH         LINE#         13
+  C:0011H         LINE#         14
+  C:0013H         LINE#         15
+  C:0015H         LINE#         16
+  -------         ENDMOD        P0_1LEDBLINKING
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0016H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=22
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
