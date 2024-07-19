@@ -1,0 +1,3 @@
+".\Objects\Fibonnaci.obj" 
+TO ".\Objects\Fibonnaci" 
+PRINT(".\Listings\Fibonnaci.m51")

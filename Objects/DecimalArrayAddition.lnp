@@ -1,0 +1,3 @@
+".\Objects\DecimalArrayAddition.obj" 
+TO ".\Objects\DecimalArrayAddition" 
+PRINT(".\Listings\DecimalArrayAddition.m51")

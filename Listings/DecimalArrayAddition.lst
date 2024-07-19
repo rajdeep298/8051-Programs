@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  DECIMALARRAYADDITION                                                 07/19/2024 10:05:44 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\DecimalArrayAddition.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE DecimalArrayAddition.a51 SET(SMALL) DEBUG PRINT(.\Listings\DecimalArray
+                      Addition.lst) OBJECT(.\Objects\DecimalArrayAddition.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Sum of ten value in decimal
+0000 7820              2     mov r0,#20h
+0002 7F0A              3     mov r7,#0ah
+0004 7400              4     mov a,#00h
+0006 7D00              5     mov r5,#00h
+0008 C3                6     clr c
+0009 36                7     loop:addc a,@r0
+000A D4                8             da a
+000B 5001              9             jnc next
+000D 0D               10             inc r5
+000E 08               11             next:inc r0
+000F DFF8             12             djnz r7,loop
+                      13     end
+A51 MACRO ASSEMBLER  DECIMALARRAYADDITION                                                 07/19/2024 10:05:44 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0009H   A   
+NEXT . . . . . . .  C ADDR   000EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

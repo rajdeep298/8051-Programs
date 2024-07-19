@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  FIBONNACI                                                            07/19/2024 09:42:31 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Fibonnaci.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE Fibonnaci.a51 SET(SMALL) DEBUG PRINT(.\Listings\Fibonnaci.lst) OBJECT(.
+                      \Objects\Fibonnaci.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Find fibonnaci numbers upto 10 counts
+0000 7820              2     mov r0,#20h
+0002 7E00              3     mov r6,#00h
+0004 EE                4     mov a,r6
+0005 F6                5     mov @r0,a
+0006 08                6     inc r0
+0007 7F01              7     mov r7,#01h
+0009 EF                8     mov a,r7
+000A F6                9     mov @r0,a
+000B 08               10     inc r0
+000C 7D08             11     mov r5,#08h
+000E 7400             12     loop:mov a,#00h
+0010 C3               13             clr c
+0011 2E               14             add a,r6
+0012 2F               15             add a,r7
+0013 F5F0             16             mov b,a
+0015 F6               17             mov @r0,a
+0016 08               18             inc r0
+0017 EF               19             mov a,r7
+0018 FE               20             mov r6,a
+0019 E5F0             21             mov a,b
+001B FF               22             mov r7,a
+001C DDF0             23             djnz r5,loop
+                      24     end
+A51 MACRO ASSEMBLER  FIBONNACI                                                            07/19/2024 09:42:31 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   000EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

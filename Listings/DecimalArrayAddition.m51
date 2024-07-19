@@ -1,0 +1,53 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/19/2024  10:05:45  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\DecimalArrayAddition.obj TO .\Objects\DecimalArrayAddition PRINT (.\Listings\Decim
+>> alArrayAddition.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\DecimalArrayAddition.obj (DECIMALARRAYADDITION)
+
+
+LINK MAP OF MODULE:  .\Objects\DecimalArrayAddition (DECIMALARRAYADDITION)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0011H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\DecimalArrayAddition (DECIMALARRAYADDITION)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DECIMALARRAYADDITION
+  C:0009H         SYMBOL        LOOP
+  C:000EH         SYMBOL        NEXT
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  C:000AH         LINE#         8
+  C:000BH         LINE#         9
+  C:000DH         LINE#         10
+  C:000EH         LINE#         11
+  C:000FH         LINE#         12
+  -------         ENDMOD        DECIMALARRAYADDITION
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0011H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=17
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
