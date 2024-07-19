@@ -1,0 +1,60 @@
+A51 MACRO ASSEMBLER  PRIMENUMBERSINARRAY                                                  07/19/2024 09:20:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PrimeNumbersinArray.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE PrimeNumbersinArray.a51 SET(SMALL) DEBUG PRINT(.\Listings\PrimeNumbersi
+                      nArray.lst) OBJECT(.\Objects\PrimeNumbersinArray.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Prime Numbers in an array
+0000 7820              2     mov r0,#20h
+0002 7930              3     mov r1,#30h
+0004 7F0A              4     mov r7,#0ah
+0006 110B              5     loop:call check_prime
+0008 08                6             inc r0
+0009 DFFB              7             djnz r7,loop
+                       8             
+000B E6                9     check_prime:mov a,@r0
+000C FE               10                             mov r6,a
+000D 1E               11                             dec r6
+000E 7D00             12                             mov r5,#00h
+0010 8EF0             13                             pLoop:mov b,r6
+0012 84               14                                     div ab
+0013 F5F0             15                                     mov b,a
+0015 6002             16                                     jz incr
+0017 8001             17                                     jmp next
+0019 0D               18                                     incr:inc r5
+001A 1E               19                                     next:dec r6
+001B EE               20                                     mov a,r6
+001C DEF2             21                                     djnz r6,pLoop
+001E ED               22                             mov a,r5
+001F B40103           23                             cjne a,#01h,nonPrime
+0022 E6               24                             mov a,@r0
+0023 F7               25                             mov @r1,a
+0024 09               26                             inc r1
+0025 00               27                             nonPrime:nop
+0026 22               28                             ret
+*** WARNING #A41 IN 28 (PrimeNumbersinArray.a51, LINE 28): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  PRIMENUMBERSINARRAY                                                  07/19/2024 09:20:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+CHECK_PRIME. . . .  C ADDR   000BH   A   
+INCR . . . . . . .  C ADDR   0019H   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   001AH   A   
+NONPRIME . . . . .  C ADDR   0025H   A   
+PLOOP. . . . . . .  C ADDR   0010H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

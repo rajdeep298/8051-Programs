@@ -1,0 +1,3 @@
+".\Objects\PrimeNumbersinArray.obj" 
+TO ".\Objects\PrimeNumbersinArray" 
+PRINT(".\Listings\PrimeNumbersinArray.m51")
