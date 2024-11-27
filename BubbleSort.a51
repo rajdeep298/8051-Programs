@@ -8,7 +8,6 @@ subb a,r6
 inc a
 mov r7,a
 loop:mov a,@r0
-	mov b,a
 	subb a,@r1
 	jnc exchange
 	jmp then
